@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Yandex</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="container">
+    <div class="screen-1">
+
+      <div class="ui--screen-header">
+        <span class="ui--screen-title">Переговорная</span>
+        
+      </div>
+      <div class="ui--screen-section">
+
+        <div class="ui--horizontal-scroll">
+          <div class="ui--card ui--card-square">
+            <span class="ui-card--title">Температура</span>
+            <span class="ui-card--value">18<span class="suffix">°C</span></span>
+          </div>
+          <div class="ui--card ui--card-square">
+            <span class="ui-card--title">Влажность</span>
+            <span class="ui-card--value">46<span class="suffix">%</span></span>
+          </div>
+          <div class="ui--card ui--card-square">
+            <span class="ui-card--title">CO2</span>
+            <span class="ui-card--value">17<span class="suffix">kWh</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="ui--screen-section">
+        <div class="ui--section-title">
+          <span>Затемнение</span>
+        </div>
+        <div class="ui--stack">
+          <div class="ui--card">
+            <div class="ui-card--icon icon-lightbulb"></div>
+            <div>
+              <span class="ui-card--title">Штору поднять</span>
+            </div>
+            <div class="ui--toggle">
+              <input type="checkbox" id="living-room-lights" />
+            
+            </div>
+          </div>
+          <div class="ui--card">
+            <div class="ui-card--icon icon-speaker"></div>
+            <div>
+              <span class="ui-card--title">Штору опустить</span>
+            </div>
+            <div class="ui--toggle">
+              <input type="checkbox" id="kitchen-speaker" />
+           
+            </div>
+          </div>
+          <div class="ui--card">
+            <div class="ui-card--icon icon-lock"></div>
+            <div>
+              <span class="ui-card--title">Дежурное освещение</span>
+            </div>
+            <div class="ui--toggle">
+              <input type="checkbox" id="front-door" />
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen-2">
+      
+      <div class="ui--screen-header">
+        <span class="ui--screen-title">Температура</span>
+        
+      </div>
+      <div class="ui--screen-section">
+        <div class="ui--dial-wrapper">
+          <div class="ui-dial--outer">
+            <div id="range--selector"></div>
+            <div id="range"></div>
+          </div>
+          <div class="ui--dial-inner">
+            <span class="ui--dial-status">&nbsp;&nbsp;&nbsp;Heating</span>
+            <span class="ui--dial-value">19<span class="suffix">°C</span>
+          </div>
+        </div>
+      </div>
+      <div class="ui--screen-section">
+        <div class="ui--stack-horizontal" style="margin-top: 36px">
+          <div class="ui--detail">
+            <span class="ui--detail-title">Indoors</span>
+            <span class="ui--detail-value">18<span class="suffix">°C</span></span>
+          </div>
+          <div class="vertical-separator"></div>
+          <div class="ui--detail">
+            <span class="ui--detail-title">Outdoors</span>
+            <span class="ui--detail-value">5<span class="suffix">°C</span></span>
+          </div>
+        </div>
+      </div>
+      <div class="ui--screen-section">
+        <div class="ui--stack-horizontal" style="margin-top: 36px">
+          <div class="ui--card ui--card-square-sm">
+            <div class="ui--button">
+              <input type="checkbox" id="eco-mode" checked>
+              <label for="eco-mode" class="icon-eco">Eco mode</label>
+            </div>
+          </div>
+          <div class="ui--card ui--card-square-sm">
+            <div class="ui--button">
+              <input type="checkbox" id="air-flow">
+              <label for="air-flow" class="icon-air">Air flow</label>
+            </div>
+          </div>
+          <div class="ui--card ui--card-square-sm">
+            <div class="ui--button">
+              <input type="checkbox" id="fan-speed">
+              <label for="fan-speed" class="icon-fan">Fan speed</label>
+            </div>
+          </div>
+          <div class="ui--card ui--card-square-sm">
+            <div class="ui--button">
+              <input type="checkbox" id="humidity">
+              <label for="humidity" class="icon-water">Humidity</label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="screen-3">
+    <div class="ui--screen-header">
+        <span class="ui--screen-title">Освещение</span>
+    </div>
+    <div class="ui--screen-section">
+        <div class="ui--dial-wrapper">
+          <div class="ui-dial--outer">
+            <div id="range--selector"></div>
+            <div id="range"></div>
+          </div>
+          <div class="ui--dial-inner">
+            <span class="ui--dial-status">&nbsp;&nbsp;&nbsp;Dimming Light</span>
+            <span class="ui--dial-value">60<span class="suffix">%</span>
+          </div>
+        </div>
+    </div>
+    <div class="ui--stack">
+        <div class="ui--card">
+        <div class="ui-card--icon icon-lightbulb"></div>
+        <div>
+            <span class="ui-card--title">Освещение включить</span>
+        </div>
+        
+        
+
+    </div>
+        <div class="ui--card">
+          <div class="ui-card--icon icon-speaker"></div>
+          <div>
+            <span class="ui-card--title">Освещение выключить</span>
+          </div>
+          <div class="ui--toggle">
+            <input type="checkbox" id="kitchen-speaker" />
+         
+          </div>
+        </div>
+        <div class="ui--card">
+          <div class="ui-card--icon icon-lock"></div>
+          <div>
+            <span class="ui-card--title">Дежурное освещение</span>
+          </div>
+          <div class="ui--toggle">
+            <input type="checkbox" id="front-door" />
+          
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+</div>
+</body>
+<script type="module" src="script.js"></script>
+
+</html>
