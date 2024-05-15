@@ -573,6 +573,74 @@ background: conic-gradient(#185c52 0%, #17cab4 calc(var(--p) * 1%), var(--primar
 mask-image: radial-gradient(farthest-side, #0000 calc(99% - 5px), #000 calc(100% - 5px));
 }
 
+.checkbox_1 {
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    right: 40px;
+}
+.checkbox_2 {
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    right: 40px;
+}
+.checkbox_3 {
+    display: inline-block;
+    position: absolute;
+    top: 2px;
+    right: 40px;
+}
+
+.checkbox__inp {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    appearance: none;
+ }
+
+.checkbox__inner {
+    display: inline-block;
+    position: relative;
+    font-size: 18;
+    padding: 10px;
+  
+}
+.checkbox__inner::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 36px;
+    left: 0px;
+    top: 0px;
+    background-color: rgb(218, 102, 102);
+    border-radius: 18px;
+    transition: background-color .3s;
+}
+
+.checkbox__inner::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    background-color: rgb(0,201, 7);
+    left: 3px;
+    top: 3px;
+}
+.checkbox__inp:checked + .checkbox__inner::before {
+    background-color: rgb(0,201, 7);
+}
+
+.checkbox__inp:checked + .checkbox__inner::after {
+    background-color: white;
+    left: 27px;
+} 
+
+
 .icon-lightbulb {
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='0 0 512 512'%3E %3Cpath fill='%23666666' d='M183 329v140c0 6 4 10 10 10h30a33 33 0 0 0 66 0h30c6 0 10-4 10-10V329a172 172 0 1 0-146 0zm73 163c-7 0-13-6-13-13h26c0 7-6 13-13 13zm53-95h-59a10 10 0 0 0 0 20h59v10h-59a10 10 0 0 0 0 21h59v11H203v-73h106ZM256 20a152 152 0 0 1 59 293c-3 2-6 5-6 9v44h-43V257l57-57a10 10 0 0 0-15-14l-59 60c-2 2-3 4-3 7v113h-43v-44c0-4-3-7-6-9a152 152 0 0 1 59-293z'/%3E %3Cpath fill='%23666666' d='m276 294 30 30a10 10 0 0 0 15-15l-30-30a10 10 0 0 0-15 0c-4 4-4 11 0 15zm55 55 3 2a10 10 0 0 0 14-14l-3-3a10 10 0 0 0-14 0c-4 4-4 11 0 15z'/%3E %3C/svg%3E");
 }
@@ -601,5 +669,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E %3Cpath fill='%23666666' d='M12 22c4.6 0 8-3.5 8-8.2 0-6.3-7.1-11.4-7.4-11.6a1 1 0 0 0-1.2 0C11.1 2.4 4 7.5 4 13.7c0 4.8 3.4 8.3 8 8.3zm0-17.7c1.6 1.3 6 5.2 6 9.5 0 3.6-2.5 6.2-6 6.2s-6-2.6-6-6.3c0-4.2 4.4-8.2 6-9.4z'/%3E %3C/svg%3E");
 }
 
+.checkbox {
+display: inline-block;
+}
 
+.checkbox__inp {
+position: absolute;
+opacity: 0;
+width: 0;
+height: 0;
+appearance: none;
+
+}
 
